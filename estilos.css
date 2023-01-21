@@ -1,0 +1,332 @@
+html {
+
+    display: block;
+
+}
+
+body {
+
+
+
+
+    display: grid;
+
+    grid-template-rows: 1fr auto;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding-top: 70px;
+    color: aliceblue;
+
+
+    background: #dfdede;
+    background-size: cover;
+}
+
+.Header {
+    top: 0;
+    position: relative;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 20px;
+
+
+
+    width: 100%;
+    padding: 3px;
+
+    border-bottom: 1px solid #b7b6b6;
+    background-image: linear-gradient(-10deg, #121212, #333333);
+    color: whitesmoke;
+}
+
+.Header img {
+   
+    max-height: 35%;
+    min-width: 100px;
+    margin: auto;
+    transition: 0.5s;
+
+
+}
+
+.Header img:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.ul_top {
+    margin: auto;
+    display: flex;
+    list-style-type: none;
+
+}
+
+
+.litop a {
+    margin-right: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+/*banner*/
+
+h1 {
+    font-size: 70px;
+}
+
+.section-banner-one {
+    position: relative;
+
+    width: 100%;
+    font-size: 25px;
+    background-color: #f5f4f4;
+    border-bottom: 1px solid #b7b6b6;
+}
+
+.banner-one {
+    margin: auto;
+    padding: 50px 0px;
+    width: 130vh;
+
+    color: #121212;
+    text-align: center;
+
+    font-family: sans-serif;
+}
+
+.banner-one h1 {
+    margin-top: 0;
+}
+
+.banner-one h5 {
+    margin-bottom: 0;
+}
+
+/*info sections*/
+
+.info-content {
+    margin: auto;
+    padding: 50px 0px;
+    width: 130vh;
+
+    color: #121212;
+    text-align: center;
+    border-bottom: 1px solid #b7b6b6;
+
+    font-family: sans-serif;
+}
+
+.section-info h1 {
+    margin-top: 0;
+
+}
+
+.img-codes img {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    margin-top: 20px;
+
+    transition: 0.2s;
+}
+
+.img-codes img:hover {
+    transform: scale(1.05, 1.05);
+}
+
+
+
+/*card sections*/
+
+.card-content {
+    display: grid;
+    grid-template-rows: 200px;
+    grid-template-columns: 200px 200px;
+    justify-content: space-around;
+
+
+    margin: auto;
+    padding: 50px 0px;
+    width: 130vh;
+
+    color: #121212;
+    text-align: center;
+    border-bottom: 1px solid #b7b6b6;
+
+    font-family: sans-serif;
+}
+
+.card-content div {
+    background-color: #f5f4f4;
+    box-shadow: -8px 8px 3px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+}
+
+.card-content div:hover {
+    transform: scale(1.02, 1.02);
+    
+}
+
+
+
+
+/**tengo un problemas con el footer y es que no lo puedo colocar hasta abajo, por mi cuenta he intentado lo que he podido aprender pero, no funciona*/
+/*vi un video en youtube de Dorian DEsings donde da tres soluciones a este peo jsjsj */
+/*la primera con solo CSS*/
+/* 
+#footer {
+    positio: adsolute;
+    bottom: 0;
+} esto va con una position adsolute en el body 
+o el contenedor y dandole un paddin-bottom y agregando  
+la propiedades de min-height: 100vh
+*/
+
+
+/*la segunda con flex*/
+
+/* en el body con un display: flex; al body con flex-direction:column; y min-height; 100vh */
+/* y al footer solo hay qe agregarle un margin-top: auto*/
+
+
+
+/*el tercero con grid*/
+
+/*el body con display grid, grid-template-rows: auto 1fr auto y el min-height*/
+
+
+
+#footer {
+
+    width: 100%;
+    height: 100%;
+    padding: 10px 0px;
+
+
+
+    border-top: 1px solid #b7b6b6;
+    background-image: linear-gradient(-10deg, #121212, #333333);
+    color: whitesmoke;
+
+    text-align: center;
+}
+
+
+#footer img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    transition: 0.2s;
+}
+
+#footer img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+
+.color-palete {
+    justify-content: start;
+ 
+
+
+    color: #2e4652;
+    display: grid;
+
+    row-gap: 20px;
+    column-gap: 20px;
+    height: 100%;
+    width: 100%;
+
+
+    grid-template-columns: repeat(5, 50px);
+    grid-template-rows: repeat(4, 50px);
+
+
+
+
+
+}
+
+.color-palete div {
+
+    position: static;
+
+    text-align: center;
+    padding-top: 20px;
+
+    background-color: #6e97ab;
+    border-radius: 5px;
+    transition: 0.5s;
+
+
+}
+
+.color-palete div:hover {
+    opacity: 0.9;
+    transform: scale(1.05, 1.05);
+    position: initial;
+}
+
+
+.element-10 {
+    grid-column: 1 / 6;
+
+}
+
+.element-30 {
+    grid-column: 4 / 6;
+}
+
+.cnt-cnt {
+    display: grid;
+
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    background-color: #2e4652;
+
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cnt-cnt div {
+    position: relative;
+
+    width: 400px;
+    height: 400px;
+    padding: 12px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+
+    background-color: aquamarine;
+    color: black;
+
+}
+
+.box-I {
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px #00ffee;
+    transition: 0.5s;
+}
+
+.box-II {
+    border-radius: 5px;
+    box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.9) inset;
+    transition: 0.5s;
+}
+
+.box-I:hover {
+    box-shadow: 1px 1px 25px #00ffee;
+    width: 420px;
+}
+
+.box-II:hover {
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.9) inset;
+}
